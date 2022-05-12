@@ -1,16 +1,16 @@
 const express = require("express");
-const { getUsers,setUsers,putUsers,deleteUsers } = require("../Controllers/userControllers");
+const { getUsers } = require("../Controllers/userControllers");
 const router=express.Router()
 
 
 
-router.route('/' , getUsers)
+router.post('/' , getUsers)
 
-router.post('/' , setUsers)
+// router.post('/' ,setUsers)
 
-router.put('/:id' ,putUsers)
+// router.put('/:id' ,putUsers)
 
-router.delete('/:id' ,deleteUsers)
+// router.delete('/:id' ,deleteUsers)
 
 
 
